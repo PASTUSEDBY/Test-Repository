@@ -23,7 +23,7 @@ magic x
     | otherwise = again
     where
         let a = divide x
-        again = magic a
+        again = magic $ sum a
         check = if x == 1
                     then True
                     else False
